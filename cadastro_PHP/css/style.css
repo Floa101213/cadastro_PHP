@@ -1,0 +1,79 @@
+body{
+image-rendering: auto;
+imag
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 500px;
+    height: 100vh;
+   
+
+}
+
+.container{
+    display: flex;
+ height: 100vh;
+gap: 280px;
+
+
+}
+
+form{
+
+    color: rgb(0, 0, 0);
+    padding: 80px 40px;
+    border-radius: 5px;
+    border: 2px solid  rgba(255, 255, 255, .2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    flex-flow: column;
+    margin-top: 22vh;
+    display: flex;
+    width:465px;
+    height: 46%;
+    gap: 7px;
+    background: transparent;
+    backdrop-filter: blur(40px);
+}
+
+label{
+   font-size: 20px;
+}
+
+.botao{
+    display: flex;
+    flex-direction: column;
+
+}
+input, button{
+ padding: 3px;
+border-radius: 10px;
+}
+
+button{
+ margin-top: 15px;
+    background-color: darkorange;
+    color: rgb(0, 0, 0);
+    width: 150px ;
+    align-items: center;
+}
+
+a{
+color: black;
+font-size: 18px;
+border: 5px;
+border: solid;
+border-radius: 10px;
+width: 150px;
+margin-top: 13px;
+align-items: center;
+background-color: darkorange;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
