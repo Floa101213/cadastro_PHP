@@ -1,6 +1,5 @@
 body{
 image-rendering: auto;
-imag
 
 }
 
@@ -10,16 +9,24 @@ imag
     box-sizing: border-box;
 }
 img{
-    width: 500px;
+    width: 700px;
     height: 100vh;
    
+
+}
+img{
+
+   width: 700px;
+    height: 100vh;
+
 
 }
 
 .container{
     display: flex;
- height: 100vh;
-gap: 280px;
+     height: 100vh;
+    gap: 150px;
+   
 
 
 }
