@@ -1,8 +1,8 @@
 <?php
-
+//conexão do banco
 include 'conexao.php';
 
-//PEGAR OS DADOS DO FORMULÁRIO
+//pegar os dados do formulário
 
 $nome = $_POST['nome'];
 $usuario = $_POST['usuario'];
@@ -10,17 +10,16 @@ $senha = $_POST['senha'];
 $setor = $_POST['setor'];
 $senha_cripto = password_hash($senha, PASSWORD_DEFAULT);
 
-//VARIAL DO INSERT
-$insert = "INSERT INTO tb_usuario value (null,'$nome','$usuario','$senha_cripto','$setor');";
+//VARIAVEL DO INSERT
+$insert = "INSERT INTO tb_usuario value(null,'$nome','$usuario','$senha_cripto','$setor');";
 
-//FUNÇÃO QUERY PARA MANDAR O BANCO DE DADOS
+//função query para mandar para o banco de dados
 
-$conexao->query($insert);
+$query = $conexao->query($insert);
 
-if($query) {
-
+if ($query) {
+    echo "<script>alert('Usuário cadastrado com sucesso!'); window.location.href='../index.html';</script>";
 }
-
 
 
 ?>
